@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+html {
+  font-size: 16px;
+}
+
+h2 {
+  font: normal 1.6rem/1.6 "'Montserrat'";
+  color: #FFFFFF;
+}
+
+a {
+  font: normal 1.6rem/1.6 "Matter";
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  position: relative;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background: #080808;
+}
+
+body,
+input,
+textarea,
+select {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 0;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+@media screen and (min-width: 940px) {
+  body:not(.touch-device) {
+    overflow: hidden;
+  }
+}
+
+body {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+::-webkit-input-placeholder {
+  color: #607C86;
+}
+
+::-moz-placeholder {
+  color: #607C86;
+}
+
+:-ms-input-placeholder {
+  color: #607C86;
+}
+
+:-moz-placeholder {
+  color: #607C86;
+}
+
+.displayNone {
+  display: none;
+}
+
+.overflowHidden {
+  overflow: hidden;
+}
+
+.innerContent {
+  width: 100%;
+  padding: 0 15vw;
+}
+
+#introduction {
+  position: absolute;
+  z-index: 10;
+  margin-top: 25vh;
+  max-width: 20rem;
+}
+
+#introduction span {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+#introduction a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #FFFFFF;
+  bottom: -0.2rem;
+  left: 0;
+}
+
+#references {
+  padding: 25vh 0;
+  margin-left: 65%;
+  z-index: 10;
+}
+
+#references span {
+  font: normal 0.7rem/1.2 "Matter";
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  display: inline-block;
+}
+
+#references>span {
+  opacity: 0.4;
+  margin-bottom: 2.2rem;
+  margin-top: 0.8rem;
+}
+
+#references #list {
+  font-size: 0;
+  display: block;
+}
+
+#references #list li {
+  display: block;
+  transition: opacity 0.3s;
+}
+
+#references #list a {
+  display: inline-block;
+  padding: 0 10px;
+  margin-left: -10px;
+}
+
+#references #list a span {
+  display: none;
+  position: absolute;
+  right: -1rem;
+  top: 1.08rem;
+  width: 20rem;
+  transform: translateX(100%);
+}
+
+#references #list a:hover span {
+  display: inline-block;
+}
+
+#references #list.hovered>li {
+  opacity: 0.2;
+}
+
+#references #list.hovered>li.active {
+  opacity: 1;
+}
+
+#bg-img {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-size: cover !important;
+  background-position: 50% 50%;
+  opacity: 0.1;
+  filter: grayscale(0.8);
+}
+
+@media screen and (max-width: 940px) {
+  #introduction {
+    position: relative;
+    margin-top: 15vw;
+  }
+
+  #references {
+    margin-left: 0;
+    padding: 10vh 0;
+  }
+}
+
+/*# sourceMappingURL=style-min.css.map */
